@@ -1,0 +1,162 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: #333333;
+    color: #ab7ecf;
+    padding: 10px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu__title {
+    font-size: 24px;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu__list__item {
+    margin: 10px 0;
+}
+
+.menu__list__item a {
+    color: #ca64ac;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+.title__profile {
+    border-radius: 50%;
+    height: 150px;
+}
+
+.title__bio {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.title__subsection {
+    font-size: 18px;
+}
+
+.title__network {
+    list-style: none;
+    padding: 0;
+}
+
+.title__network__item {
+    display: inline;
+    margin: 0 10px;
+}
+
+.about, .skills, .hobbies, .academic, .experience, .formcontato, .footer {
+    padding: 20px;
+}
+
+.about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title, .formcontato__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about__paragraph {
+    margin-bottom: 10px;
+}
+
+.skills__line, .hobbies__line, .academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills__box, .hobbies__box, .academic__courses__box, .experience__box {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills__img, .hobbies__img, .academic__courses__item__img, .experience__img {
+    height: 100px;
+}
+
+.formcontato__contacto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formcontato--esquerda, .formcontato__text {
+    flex: 1 1 50%;
+}
+
+.formcontato__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.formcontato__input, .formcontato__textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.formcontato__botao {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* PANTALLAS RESPONSIVAS */
+@media (max-width: 768px) {
+    .skills__box, .hobbies__box, .academic__courses__box, .experience__box {
+        flex: 1 1 45%;
+    }
+
+    .formcontato--esquerda, .formcontato__text {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__box, .hobbies__box, .academic__courses__box, .experience__box {
+        flex: 1 1 100%;
+    }
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
